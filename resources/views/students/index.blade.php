@@ -1,5 +1,5 @@
-@extends('layout');
-@yield('content');
+@extends('layout')
+@section('content')
 
 <table class="table">
     <thead>
@@ -11,12 +11,18 @@
       </tr>
     </thead>
     <tbody>
+     @foreach ($students as $item)
+
       <tr>
+
         <th scope="row">1</th>
-        <td>Mark</td>
+        <td>{{$item->name}}</td>
         <td>Otto</td>
         <td>@mdo</td>
       </tr>
+      @endforeach
 
     </tbody>
   </table>
+
+  @endsection

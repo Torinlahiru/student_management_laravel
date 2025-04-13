@@ -59,8 +59,9 @@
 
     <!-- Optional main content area -->
     <div class="flex-grow-1 p-4">
-        <div class="">
+        <div class="content">
             <h2>Student Management System</h2>
+            @yield('content')
         </div>
     </div>
 
