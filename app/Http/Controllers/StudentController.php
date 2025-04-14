@@ -23,9 +23,10 @@ class StudentController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(): View
     {
         //
+        return view('students.create');
     }
 
     /**
@@ -34,6 +35,9 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         //
+        $input = $request->all();
+        Student::created($input);
+        return redirect('student')->with('flash_massage', 'Student Added!');
     }
 
     /**
