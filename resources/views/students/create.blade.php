@@ -6,6 +6,7 @@
         </div>
         <div class="card-body">
             <form action="{{url('student')}}" method="POST">
+                @csrf
                 <label for="Name">Name</label>
                 <input type="text" name="Name" id="">
                 <label for="Address">Address</label>
