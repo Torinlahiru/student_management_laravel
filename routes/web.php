@@ -8,3 +8,5 @@ Route::get('/', function () {
 });
 
 Route::resource('/student', StudentController::class);
+Route::get('/students', [StudentController::class, 'create'])->name('students.create');
+Route::post('/students', [StudentController::class, 'store'])->name('students.store');

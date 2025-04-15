@@ -1,6 +1,12 @@
 @extends('layout')
 @section('content')
 
+@if (session('flash_message'))
+    <div class="alert alert-success">
+        {{ session('flash_message') }}
+    </div>
+@endif
+
 <table class="table">
     <a href="{{url('student/create')}}" class="btn btn-success"> Add new</a>
     <thead>
