@@ -2,6 +2,7 @@
 @section('content')
 
 <table class="table">
+    <a href="{{url('student/create')}}" class="btn btn-success"> Add new</a>
     <thead>
       <tr>
         <th scope="col">Id</th>
