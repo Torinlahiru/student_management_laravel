@@ -38,7 +38,7 @@ class StudentController extends Controller
         //
         $input = $request->all();
         Student::created($input);
-        return redirect('student')->with('flash_massage', 'Student Added!');
+        return redirect('students')->with('flash_massage', 'Student Added!');
     }
 
     /**

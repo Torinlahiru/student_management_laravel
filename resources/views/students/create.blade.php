@@ -5,15 +5,27 @@
             Student Registration
         </div>
         <div class="card-body">
-            <form action="{{url('student')}}" method="POST">
+            <form action="{{url('students')}}" method="POST">
                 @csrf
-                <label for="Name">Name</label>
-                <input type="text" name="Name" id="" class="form-control">
-                <label for="Address">Address</label>
-                <input type="text" name="Address" class="form-control">
-                <label for="Mobile">Mobile</label>
-                <input type="text" name="Mobile" class="form-control">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" id="" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="Address">Address</label>
+                    <input type="text" name="Address" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="Mobile">Mobile</label>
+                    <input type="text" name="Mobile" class="form-control">
+                </div>
+
+<div class="form-group">
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</div>
+
             </form>
         </div>
     </div>
