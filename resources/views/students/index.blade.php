@@ -22,10 +22,10 @@
 
       <tr>
 
-        <th scope="row">1</th>
+        <td>{{$item->id}}</th>
         <td>{{$item->name}}</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        <td>{{$item->address}}</td>
+        <td>{{$item->mobile}}</td>
       </tr>
       @endforeach
 
