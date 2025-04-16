@@ -15,6 +15,7 @@
         <th scope="col">Name</th>
         <th scope="col">Address</th>
         <th scope="col">Mobile</th>
+        <th scope="col">Action</th>
       </tr>
     </thead>
     <tbody>
@@ -26,6 +27,9 @@
         <td>{{$item->name}}</td>
         <td>{{$item->address}}</td>
         <td>{{$item->mobile}}</td>
+        <td>
+            <a type="button" class="btn btn-info" href="{{url('/student'.'/'.$item->id)}}">View</a>
+        </td>
       </tr>
       @endforeach
 
